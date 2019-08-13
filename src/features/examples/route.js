@@ -22,6 +22,7 @@ import {
   Layout,
   Login,
   Page403,
+  FormSubmitAntd,
 } from './';
 
 export default {
@@ -34,5 +35,6 @@ export default {
     { path: 'reddit', auth: true, name: 'Reddit list page', component: RedditListPage },
     { path: 'login', name: 'Login', component: Login },
     { path: '403', name: 'Page 403', component: Page403 },
+    { path: 'formSubmitAntd', name: 'Form submit antd', component: FormSubmitAntd },
   ],
 };
