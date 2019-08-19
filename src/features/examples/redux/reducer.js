@@ -7,12 +7,27 @@
 // https://medium.com/@nate_wang/a-new-approach-for-managing-redux-actions-91c26ce8b5da.
 
 import initialState from './initialState';
-import { reducer as counterPlusOneReducer } from './counterPlusOne';
-import { reducer as counterMinusOneReducer } from './counterMinusOne';
-import { reducer as counterResetReducer } from './counterReset';
-import { reducer as fetchRedditListReducer } from './fetchRedditList';
-import { reducer as loginReducer } from './login';
-import { reducer as logoutReducer } from './logout';
+import {
+  reducer as counterPlusOneReducer
+} from './counterPlusOne';
+import {
+  reducer as counterMinusOneReducer
+} from './counterMinusOne';
+import {
+  reducer as counterResetReducer
+} from './counterReset';
+import {
+  reducer as fetchRedditListReducer
+} from './fetchRedditList';
+import {
+  reducer as loginReducer
+} from './login';
+import {
+  reducer as logoutReducer
+} from './logout';
+import {
+  reducer as listPage
+} from './listPage';
 
 const reducers = [
   counterPlusOneReducer,
@@ -21,6 +36,7 @@ const reducers = [
   fetchRedditListReducer,
   loginReducer,
   logoutReducer,
+  listPage,
 ];
 
 export default function reducer(state = initialState, action) {
